@@ -28,5 +28,31 @@
         </div>
     </div>
 
+    <script>
+
+        const taskForm = document.getElementById("taskForm");
+
+        //Evento al hacer submit en el formulario:
+        taskForm.addEventListener('submit', async(event) => {
+            //evitamos que se actualice la página:
+            event.preventDefault();
+
+            //Recogemos los datos del input:
+            const description = document.getElementById('task').value;
+
+            //Nos aseguramos que tenemos el dato:
+            if(description == ""){
+                alert("Debes indicar una descripción");
+                return;
+            }
+
+            
+
+
+        })
+
+
+    </script>
+
 </body>
 </html>
